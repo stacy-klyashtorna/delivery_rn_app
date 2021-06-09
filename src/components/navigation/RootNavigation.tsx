@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {Animated, AppState, StyleSheet, View} from 'react-native';
 
+import StackNavigator from './StackNavigator';
 import CoverScreen from './CoverScreen';
 
 const RootNavigation: React.FunctionComponent = () => {
@@ -39,6 +40,7 @@ const RootNavigation: React.FunctionComponent = () => {
 
   return (
     <View style={styles.root}>
+      <StackNavigator />
       {showCoverScreen && <CoverScreen opacity={coverScreenOpacity} />}
     </View>
   );

@@ -21,9 +21,12 @@ export const CoverScreen: React.FunctionComponent<{opacity: any}> = ({
 const styles = StyleSheet.create({
   coverScreen: {
     flex: 1,
-    // backgroundColor: colors.off_black,
     alignItems: 'center',
-    // justifyContent: 'center',
+    position: 'absolute',
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0,
   },
   image: {
     flex: 1,
@@ -44,7 +47,6 @@ const styles = StyleSheet.create({
     borderWidth: 1,
   },
   text: {
-    // fontFamily: 'SF-Pro-Rounded-SemiBold',
     alignSelf: 'center',
     position: 'absolute',
     bottom: '40%',
