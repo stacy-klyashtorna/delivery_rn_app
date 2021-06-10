@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 
-import RootNavigation from './src/components/navigation/RootNavigation';
+import RootNavigation from './src/navigation/containers/RootNavigation';
 
 const App = () => (
   // Add Redux

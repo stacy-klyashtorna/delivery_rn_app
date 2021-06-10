@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import {Animated, AppState, StyleSheet, View} from 'react-native';
 
-import StackNavigator from './StackNavigator';
-import CoverScreen from './CoverScreen';
+import StackNavigator from '../navigators/StackNavigator';
+import CoverScreen from '../../components/CoverScreen';
 
 const RootNavigation: React.FunctionComponent = () => {
   const [showCoverScreen, setShowCoverScreen] = useState<boolean>(false);

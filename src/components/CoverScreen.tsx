@@ -1,10 +1,10 @@
 import React from 'react';
 import {Animated, Image, StyleSheet, View, Text} from 'react-native';
 
-import {colors} from '../../constants/colors';
+import {colors} from '../constants/colors';
 
-const logo = require('../../../assets/images/logo.png');
-const background = require('../../../assets/images/background.jpeg');
+const logo = require('../../assets/images/logo.png');
+const background = require('../../assets/images/background.jpeg');
 
 export const CoverScreen: React.FunctionComponent<{opacity: any}> = ({
   opacity,

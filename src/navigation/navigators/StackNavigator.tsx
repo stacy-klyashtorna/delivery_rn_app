@@ -1,9 +1,10 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 
-import LoginScreen from '../login/LoginScreen';
+import LoginScreen from '../../features/login/components';
 
-import {routes} from '../../constants/routes';
+import {routes} from '../routes';
+import HomeScreen from '../../features/home/components';
 
 const Stack = createStackNavigator();
 
@@ -13,6 +14,13 @@ const StackNavigator: React.FunctionComponent = (props: any) => {
       <Stack.Screen
         name={routes.LOGIN}
         component={LoginScreen}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name={routes.HOME}
+        component={HomeScreen}
         options={{
           headerShown: false,
         }}
